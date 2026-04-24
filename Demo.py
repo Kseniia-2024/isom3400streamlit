@@ -17,7 +17,7 @@ sales_target = st.number_input("Enter your age:",
 st.write(f"Your sales target is {sales_target}")
 
 region = st.selectbox("Choose region:",
-                      ["North", "South", "West", "East])
+                      ["North", "South", "West", "East"])
 st.write(f"You selected: {option}")
 
 if st.button("Submit"):
