@@ -7,7 +7,7 @@ import numpy as np
 # -------------------------------
 st.title("📊 Retail Business Dashboard")
 st.header("Manage Input Section")
-st.write("APlease enter the monthly salas target and select the region.")
+st.write("Please enter the monthly salas target and select the region.")
 
 
 sales_target = st.number_input("Enter your age:",
