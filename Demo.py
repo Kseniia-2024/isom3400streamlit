@@ -18,7 +18,7 @@ st.write(f"Your sales target is {sales_target}")
 
 region = st.selectbox("Choose region:",
                       ["North", "South", "West", "East"])
-st.write(f"You selected: {option}")
+st.write(f"You selected: {region}")
 
 if st.button("Submit"):
                        st.write("Button clicked!")
