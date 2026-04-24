@@ -12,8 +12,7 @@ st.write("Please enter the monthly salas target and select the region.")
 
 sales_target = st.number_input("Enter your age:",
                       min_value=0,
-                      max_value=120,
-                      value=25)
+                      max_value=5000)
 st.write(f"Your sales target is {sales_target}")
 
 region = st.selectbox("Choose region:",
