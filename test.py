@@ -68,9 +68,10 @@ with tab2:
     placeholder.write("Data loading complete. Displaying your GPA.")
     Numbers = {"A": 4.0, "B": 3.0, "C": 2.0}
     for i in subjects_list:
-        for j in Numbers: 
-            Mark = i["Target Mark"]
-            total_score += j[Mark]
+        Mark = i["Target Mark"]
+        for j in Numbers:
+            if Mark == j[Mark]:
+                total_score += j[Mark]
     GPA=total_score/count
     st.subheader(GPA)
         
