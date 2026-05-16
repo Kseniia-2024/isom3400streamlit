@@ -56,29 +56,24 @@ with tab2:
         st.write(f"{i["Subject"]}: {i["Target Mark"]}")
         count+=1
         
-    with st.expander("More Information"):
-        st.write("Do not **give up**.")
+    with st.expander("*Some motivation...*"):
+        st.write("Do not **give up!** ... he-he")
     
-    # Dynamic Containers
+    
     placeholder = st.empty()
-    
-    # Simulate loading data and updating the placeholder
     for i in range(5):
-        placeholder.write(f"Loading data... {i*20}% complete")
+        placeholder.write(f"Loading you GPA... {i*20}% complete")
         time.sleep(1)
     
-    # Once loading is complete, display the final message
-    placeholder.write("Data loading complete. Displaying business insights.")
-    
-    # Display dynamic business insights
-    business_insights = [
-        "Revenue increased by 15% in Q1 2024.",
-        "Customer satisfaction improved by 10%.",
-        "Market trends show a growing demand for eco-friendly products."
-    ]
-    for insight in business_insights:
-        placeholder.write(insight)
-        time.sleep(2)
+    placeholder.write("Data loading complete. Displaying your GPA.")
+    Numbers = {"A": 4.0, "B": 3.0, "C": 2.0}
+    for i in subjects_list:
+        for j in Numbers: 
+            Mark = i["Target Mark"]
+            total_score += j[Mark]
+    GPA=total_score/count
+    st.subheader(GPA)
+        
     
     
     
