@@ -39,23 +39,12 @@ with tab2:
                                max_value = 4.3,
                                value = 3.0)
     subjects_list = [
-        {
-          "Subject": subjectT, 
-          "Target Mark": Target_Mark_T
-        },
-        {
-          "Subject": subjectS, 
-          "Target Mark": Target_Mark_S
-        }
-        {
-          "Subject": subjectA, 
-          "Target Mark": Target_Mark_A
-        }
-        {
-          "Subject": subjectH, 
-          "Target Mark": Target_Mark_H
-        }
+        {"Subject": subjectT, "Target Mark": Target_Mark_T},
+        {"Subject": subjectS, "Target Mark": Target_Mark_S},
+        {"Subject": subjectA, "Target Mark": Target_Mark_A},
+        {"Subject": subjectH, "Target Mark": Target_Mark_H}
     ]
+    
     for i in subject_list:
         st.write(f"{i["subject"]}: {i["Target Mark"]}")
 
