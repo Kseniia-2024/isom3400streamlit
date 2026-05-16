@@ -6,6 +6,11 @@ st.subheader("For BBA 2026")
 
 tab1, tab2= st.tabs(["Common Core Courses", "GPA"])
 with tab1:
+    st.write("Want predict you Common Core GPA?")
+    wanted_GPA=st.number_input("Enter the targeted common core GPA: ",
+                               min_value = 1.5,
+                               max_value = 4.3,
+                               value = 3.0)
     subjectT, subjectS, subjectA, subjectH = st.columns(4)
     with subjectT:
         st.subheader("T-core")
@@ -33,11 +38,8 @@ with tab1:
                         ["A", "B", "C"])
 
 with tab2:
-    st.write("Want predict you Common Core GPA?")
-    wanted_GPA=st.number_input("Enter the targeted common core GPA: ",
-                               min_value = 1.5,
-                               max_value = 4.3,
-                               value = 3.0)
+    st.write("**Your targeted GPA for commen core: **")
+    st.subheader(wanted_GPA)
     subjects_list = [
         {"Subject": subjectT, "Target Mark": Target_Mark_T},
         {"Subject": subjectS, "Target Mark": Target_Mark_S},
