@@ -36,6 +36,9 @@ with tab1:
                         ["HUMA1006", "SOCS2500", "ISOM1001"])
         Target_Mark_H = st.selectbox("Choose the H-core subject target mark: ",
                         ["A", "B", "C"])
+    if st.button("Submit"):
+        st.success(f"Your wanted GPA: {wanted_GPA}, Total number of subjects: {count}")
+
 
 with tab2:
     st.write("**Your targeted GPA for Common Core:**")
@@ -58,6 +61,5 @@ with tab2:
 
 
 
-if st.button("Submit"):
-    st.success(f"Your wanted GPA: {wanted_GPA}, Total number of subjects: {count}")
+
 
