@@ -13,5 +13,5 @@ subject = st.selectbox("Choose the subject to add: ",
 if st.button("Submit"):
     st.success(f"Your wanted GPA: {wanted_GPA}, Total number of subjects: {color}")
 else: 
-  subject = st.selectbox("Choose the subject to add: ",
+    subject = st.selectbox("Choose the subject to add: ",
                     ["ISOM2010", "ACCT2200", "LANG2068"])
