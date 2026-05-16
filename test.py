@@ -70,7 +70,7 @@ with tab2:
     for i in subjects_list:
         Mark = i["Target Mark"]
         for j in Numbers:
-            if Mark == j[Mark]:
+            if Mark == Numbers[Mark]:
                 total_score += j[Mark]
     GPA=total_score/count
     st.subheader(GPA)
