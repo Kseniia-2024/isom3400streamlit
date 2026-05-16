@@ -8,5 +8,5 @@ wanted_GPA=st.number_input("Enter the targeted GPA: ",
                            max_value = 4.3,
                            value = 3.0)
 subject=st.slectbox("Choose the subject to add: ",
-                    ["ISOM2010", "ACCT2200", "LANG2068"]
+                    ["ISOM2010", "ACCT2200", "LANG2068"])
 
