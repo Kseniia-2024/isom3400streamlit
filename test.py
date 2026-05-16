@@ -38,7 +38,7 @@ with tab1:
                         ["A", "B", "C"])
 
 with tab2:
-    st.write("**Your targeted GPA for commen core: **")
+    st.write("**Your targeted GPA for commen core:**")
     st.subheader(wanted_GPA)
     subjects_list = [
         {"Subject": subjectT, "Target Mark": Target_Mark_T},
