@@ -71,7 +71,7 @@ with tab2:
     for i in subjects_list:
         Mark = i["Target Mark"]
         st.write(i["Subject"], Mark, Numbers[Mark])
-        if Mark == Numbers.key:
+        if Mark == Numbers:
             total_score += Numbers[Mark]
     GPA = total_score / len(subjects_list)
     st.subheader(GPA)
