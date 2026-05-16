@@ -67,9 +67,12 @@ with tab2:
     
     placeholder.write("Data loading complete. Displaying your GPA.")
     Numbers = {"A": 4.0, "B": 3.0, "C": 2.0}
+    total_score=0
     for i in subjects_list:
         Mark = i["Target Mark"]
+        st.write(Mark)
         for j in Numbers:
+            st.write(Numbers[Mark])
             if Mark == Numbers[Mark]:
                 total_score += Numbers[Mark]
     GPA = total_score / len(subjects_list)
