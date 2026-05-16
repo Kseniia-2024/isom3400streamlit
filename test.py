@@ -1,4 +1,5 @@
 import streamlit as st
+import time
 
 st.title("Hong Kong University of Science and Technology")
 st.header("Common Core Calculator Planner")
