@@ -18,7 +18,7 @@ with subjectT:
 with subjectS:
     st.subheader("S-core")
     subjectS = st.selectbox("Choose the S-core subject to add: ",
-                    ["ISOM2010", "ACCT2200", "LANG2068"])
+                    ["IEDA1522", "PHYS1001", "CHEM2001", "BIOL1001", "SUST2500"])
     Target_Mark_S = st.selectbox("Choose the S-core subject target mark: ",
                     ["A", "B", "C"])
 with subjectA:
