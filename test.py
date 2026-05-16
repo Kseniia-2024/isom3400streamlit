@@ -44,9 +44,10 @@ with tab2:
         {"Subject": subjectA, "Target Mark": Target_Mark_A},
         {"Subject": subjectH, "Target Mark": Target_Mark_H}
     ]
-    
+    count=0
     for i in subjects_list:
         st.write(f"{i["Subject"]}: {i["Target Mark"]}")
+        count+=1
 
 
 
@@ -55,7 +56,5 @@ with tab2:
 
 
 if st.button("Submit"):
-    st.success(f"Your wanted GPA: {wanted_GPA}, Total number of subjects: {color}")
-else: 
-    subject = st.selectbox("Choose the subject to add: ",
-                    ["ISOM2010", "ACCT2200", "LANG2068"])
+    st.success(f"Your wanted GPA: {wanted_GPA}, Total number of subjects: {count}")
+
