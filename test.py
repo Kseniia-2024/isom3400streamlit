@@ -45,7 +45,7 @@ with tab2:
         {"Subject": subjectH, "Target Mark": Target_Mark_H}
     ]
     
-    for i in subject_list:
+    for i in subjects_list:
         st.write(f"{i["subject"]}: {i["Target Mark"]}")
 
 
