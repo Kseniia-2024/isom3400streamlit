@@ -71,8 +71,8 @@ with tab2:
         Mark = i["Target Mark"]
         for j in Numbers:
             if Mark == Numbers[Mark]:
-                total_score += j[Mark]
-    GPA=total_score/count
+                total_score += Numbers[Mark]
+    GPA = total_score / len(subjects_list)
     st.subheader(GPA)
         
     
